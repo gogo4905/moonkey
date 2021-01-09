@@ -1,5 +1,5 @@
 body {
-  height: 2000vw;
+  height: 1000vw;
 }
 
 .world {
@@ -37,26 +37,32 @@ body {
 }
 
 .tri-a {
-  transform: translateZ(1000vw);
+  transform: translateZ(0vw);
 
 }
 
 .tri-b {
-  transform: translateZ(800vw);
+  transform: translateZ(-100vw);
 }
 
 .tri-c {
-  transform: translateZ(350vw);
-}
-
-.tri-d {
-  transform: translateZ(0vw);
-}
-
-.tri-e {
   transform: translateZ(-300vw);
 }
 
+.tri-d {
+  transform: translateZ(-500vw);
+}
+
+.tri-e {
+  transform: translateZ(-700vw);
+}
+
 .tri-f {
-  transform: translateZ(-600vw);
+  transform: translateZ(-1000vw);
+}
+.tri-g {
+  transform: translateZ(-1300vw);
+}
+.tri-h {
+  transform: translateZ(-1500vw);
 }

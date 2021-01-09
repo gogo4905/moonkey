@@ -36,6 +36,14 @@
         <div class="tri-shade"></div>
         <div class="tri"></div>
       </div>
+      <div class="tri-g">
+        <div class="tri-shade"></div>
+        <div class="tri"></div>
+      </div>
+      <div class="tri-h">
+        <div class="tri-shade"></div>
+        <div class="tri"></div>
+      </div>
     </div>
   </div>
   <script scr="tri.js">
@@ -44,7 +52,7 @@
       const stageElem = document.querySelector('.stage');
       let maxScrollValue = document.body.offsetHeight - window.innerHeight;
       window.addEventListener('scroll', function() {
-        let zMove = pageYOffset / maxScrollValue * 1800 - 1000;
+        let zMove = pageYOffset / maxScrollValue * 1500;
         stageElem.style.transform = 'translateZ(' + zMove + 'vw)';
 
       });
