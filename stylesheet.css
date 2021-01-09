@@ -1,0 +1,62 @@
+body {
+  height: 2000vw;
+}
+
+.world {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  perspective: 1500px;
+}
+
+.stage {
+  width: 100vw;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.tri-shade {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('tri_shade.png');
+}
+
+.tri {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.tri-a {
+  transform: translateZ(1000vw);
+
+}
+
+.tri-b {
+  transform: translateZ(800vw);
+}
+
+.tri-c {
+  transform: translateZ(350vw);
+}
+
+.tri-d {
+  transform: translateZ(0vw);
+}
+
+.tri-e {
+  transform: translateZ(-300vw);
+}
+
+.tri-f {
+  transform: translateZ(-600vw);
+}

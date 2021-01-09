@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+<body>
+  <div class="world">
+    <div class="stage">
+      <div class="tri-a">
+        <div class="tri-shade"></div>
+        <div class="tri"></div>
+      </div>
+      <div class="tri-b">
+        <div class="tri-shade"></div>
+        <div class="tri"></div>
+      </div>
+      <div class="tri-c">
+        <div class="tri-shade"></div>
+        <div class="tri"></div>
+      </div>
+      <div class="tri-d">
+        <div class="tri-shade"></div>
+        <div class="tri"></div>
+      </div>
+      <div class="tri-e">
+        <div class="tri-shade"></div>
+        <div class="tri"></div>
+      </div>
+      <div class="tri-f">
+        <div class="tri-shade"></div>
+        <div class="tri"></div>
+      </div>
+    </div>
+  </div>
+  <script scr="tri.js">
+    (function() {
+
+      const stageElem = document.querySelector('.stage');
+      let maxScrollValue = document.body.offsetHeight - window.innerHeight;
+      window.addEventListener('scroll', function() {
+        let zMove = pageYOffset / maxScrollValue * 1800 - 1000;
+        stageElem.style.transform = 'translateZ(' + zMove + 'vw)';
+
+      });
+
+    })();
+  </script>
+</body>
+
+</html>
