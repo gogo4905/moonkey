@@ -1,0 +1,108 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  font-family: 'Hatton',serif;
+  font-size: 14px;
+}
+
+body{
+  width: 100%;
+  height: 500vh;
+  /* overflow: hidden; */
+  letter-spacing: -0.05em;
+  background: black;
+
+}
+p{
+  color: white;
+  letter-spacing: 1.3;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+.container{
+
+}
+#scroll-section-0{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250vh;
+}
+
+#scroll-section-0 h1{
+  color: white;
+  font-size: 2.7rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.sticky-elem{
+  display: none;
+  position: fixed;
+  left: 0;
+  top:45vh;
+  width: 100%;
+}
+
+
+
+.sticky-elem-canvas{
+  top: 0;
+  height: 100%;
+}
+
+.sticky-elem-canvas canvas{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.main-message h1{
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.7rem;
+}
+.main-message .description{
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.main-message{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+#scroll-section-1{
+  margin-top: 20vh;
+  padding-bottom: 20vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mid-message p{
+  max-width: 900px;
+  margin: 10vw;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.6rem;
+  text-align: justify;
+
+}
+
+#show-scene-0 #scroll-section-0 .sticky-elem,
+#show-scene-1 #scroll-section-1 .sticky-elem{
+  display: block;
+  will-change: transform, opacity;
+}
