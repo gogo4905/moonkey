@@ -1,108 +1,325 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
 
-html{
-  font-family: 'Hatton',serif;
-  font-size: 14px;
+html {
+  font-family: 'Hatton', 'Object Sans'serif;
+  font-size: 1vw;
 }
 
-body{
-  width: 100%;
-  height: 500vh;
+body {
+  width: 100vw;
+  height: 300vh;
   /* overflow: hidden; */
   letter-spacing: -0.05em;
-  background: black;
-
-}
-p{
-  color: white;
-  letter-spacing: 1.3;
+  background: white;
 }
 
-a{
-  color: white;
+a {
+  color: #ddd;
   text-decoration: none;
+  cursor: pointer;
 }
-.container{
 
-}
-#scroll-section-0{
+.container {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 250vh;
-}
-
-#scroll-section-0 h1{
-  color: white;
-  font-size: 2.7rem;
-  font-weight: 900;
-  text-align: center;
-}
-
-.sticky-elem{
-  display: none;
-  position: fixed;
-  left: 0;
-  top:45vh;
   width: 100%;
 }
 
-
-
-.sticky-elem-canvas{
+.navigation {
+  position: fixed;
   top: 0;
-  height: 100%;
-}
-
-.sticky-elem-canvas canvas{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
-
-.main-message h1{
-  font-weight: bold;
-  text-align: center;
-  font-size: 2.7rem;
-}
-.main-message .description{
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  font-size: 1.4rem;
-}
-.main-message{
+  right: 0;
+  width: 100vw;
+  font-size: 1.7rem;
   display: flex;
-  justify-content: center;
   align-items: center;
-  opacity: 0;
+  justify-content: center;
+  font-family: 'Object Sans', serif;
+  font-weight: bold;
+  background: transparent;
+  backdrop-filter: saturate(90%) blur(20px);
+  z-index: 100;
 }
 
-#scroll-section-1{
-  margin-top: 20vh;
-  padding-bottom: 20vh;
+.navigation .nav-con{
+  width: 80vw;
+  height: 2.4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation .logo{
+  margin: 0.4em auto 0.4em 0.4em;
+  width: 1.4em;
+  height: 1.4em;
+  /* background: url('logoM.svg');
+  background-position: center;
+
+  background-size: contain;
+  background-repeat: no-repeat; */
+}
+
+.navigation .nav1 {
+  margin: 0.4em;
+}
+
+.navigation .nav2 {
+  margin: 0.4em;
+}
+
+#scroll-section-0 {
+  width: 100%;
+  height: 200vh;
+}
+
+.sticky-elem {
+  display: none;
+  position: fixed;
+  left: 10vh;
+  top: 45vh;
+  width: 100%;
+}
+
+#scroll-section-0 .main-message {
+  font-family: "PP Woodland", serif;
+  font-weight: 900;
+  text-align: left;
+  font-size: 4rem;
+  color: black;
+}
+
+#scroll-section-0 .sub-message {
+  display: none;
+  display: inline-block;
+  font-family: "PP Woodland", serif;
+  font-weight: 900;
+  text-align: left;
+  font-size: 3.4rem;
+  color: black;
+}
+
+#scroll-section-0 .a {
+  left: 10vh;
+  top: 40vh;
+}
+
+#scroll-section-0 .b {
+  left: 10.2vh;
+  top: calc(40vh + 3.7rem);
+}
+
+.circle-path.a {
+  right: 0;
+  top: 50vh;
+  width: 150vh;
+  height: 150vh;
+  transform: translate(80%, -50%);
+  z-index: -10;
+}
+
+.circle-path.a circle {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 2850, 2850;
+  stroke-dashoffset: 2850;
+}
+
+.circle-path.b {
+  left: 0;
+  top: 50vh;
+  width: 100vh;
+  height: 100vh;
+  transform: translate(0, 20%);
+  z-index: -10;
+}
+
+.circle-path.b circle {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1600, 1600;
+  stroke-dashoffset: 3200;
+}
+
+#scroll-section-1 {
+  height: 150vw;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.mid-message p{
-  max-width: 900px;
-  margin: 10vw;
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 2.6rem;
-  text-align: justify;
+#scroll-section-1 .title-message {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10;
 
+}
+#scroll-section-1 .works-title{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "PP Woodland", serif;
+  font-weight: 900;
+  font-size: 10em;
+  color: black;
+  letter-spacing: -0.04em;
+  white-space:nowrap
+}
+
+.works-title.sticky-works{
+  position: sticky;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.title-message .title {
+  font-family: "Object Sans", sans-serif;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  letter-spacing: -0.04em;
+  white-space:nowrap
+}
+
+.title-message .title.a{
+  font-size: 13rem;
+  left:0;
+  top: 8vh;
+  text-align: left;
+}
+
+.title-message .title.b{
+  font-size: 14rem;
+  top: auto;
+  left: auto;
+  right: 120vw;
+  bottom: -3vh;
+  text-align: right;
+}
+.description_net{
+  opacity: 1;
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  font-size: 2.3em;
+  font-weight: bold;
+  font-family: "Object Sans", sans-serif;
+  color: white;
+  transform: translate(-50%,-50%);
+}
+
+#scroll-section-1 #video-canvas {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+#scroll-section-1 .background-bk{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  z-index: -15;
+}
+
+#scroll-section-2 {
+  height: 150vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#scroll-section-3 {
+  height: 150vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #show-scene-0 #scroll-section-0 .sticky-elem,
-#show-scene-1 #scroll-section-1 .sticky-elem{
+#show-scene-1 #scroll-section-1 .sticky-elem,
+#show-scene-1 #scroll-section-1 #video-canvas,
+#show-scene-1 #scroll-section-1 .background-bk,
+#show-scene-2 #scroll-section-2 .sticky-elem,
+#show-scene-3 #scroll-section-3 .sticky-elem {
   display: block;
   will-change: transform, opacity;
+}
+
+@keyframes loading-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-circle-ani {
+  0% {
+    stroke-dashoffset: 157;
+  }
+
+  75% {
+    stroke-dashoffset: -147;
+  }
+
+  100% {
+    stroke-dashoffset: -157;
+  }
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background: black;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.loading-circle {
+  width: 54px;
+  height: 54px;
+  animation: loading-spin 3s infinite;
+}
+
+.loading-circle circle {
+  stroke: white;
+  stroke-width: 4;
+  /* getTotalLength()로 stroke의 길이를 얻어올 수 있음 */
+  stroke-dasharray: 157, 157;
+  stroke-dashoffset: 0;
+  fill: transparent;
+  animation: loading-circle-ani 1s infinite;
+}
+
+.before-load .container {
+  display: none;
+}
+
+.before-load .loading {
+  opacity: 1;
+  font-family: 'Object Sans'serif;
+  font-weight: bold;
+  font-size: 2rem;
 }

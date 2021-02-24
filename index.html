@@ -1,37 +1,172 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Sail to the New World</title>
+	<title>Hello, Stranger</title>
 	<link rel="stylesheet" href="css/default.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body id="show-scene-0">
-	<div class="container">
-		<section class="scroll-section" id="scroll-section-0">
-			<div class="sticky-elem sticky-elem-canvas">
-				<canvas id="video-canvas-0" width="1980" height="1080"></canvas>
-			</div>
-			<div class="sticky-elem main-message a">
-				<h1>“But man is not made for defeat," he said. <br>"A man can be destroyed but not defeated.”</h1>
-			</div>
-			<div class="sticky-elem main-message b">
-				<h1>“It's silly not to hope. <br>It's a sin he thought.”</h1>
-			</div>
-			<div class="sticky-elem main-message c">
-				<div class="description">Ernest Hemingway, The Old Man and the Sea</div>
-			</div>
-		</section>
-		<section class="normal-content" id="scroll-section-1">
-			<div class="mid-message">
-				<p>
-					He no longer dreamed of storms, nor of women, nor of great occurrences, nor of great fish, nor fights, nor contests of strength, nor of his wife. He only dreamed of places now and of the lions on the beach. They played like young cats in the dusk and he loved them as he loved the boy. -The Old Man and the Sea
-				</p>
-			</div>
-		</section>
+
+<body id="show-scene-0" class="before-load">
+	<div class="loading">
+		<svg class="loading-circle">
+			<circle cx="50%" cy="50%" r="25"></circle>
+		</svg>
 	</div>
-	<script src="js/main.js"></script>
+	<!-- main page -->
+	<div class="container">
+		<nav class="navigation">
+			<div class="nav-con">
+				<div class="logo">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.79 63.33">
+					  <defs>
+					    <style>
+								@keyframes logo-ani1 {
+									0%{
+										stroke-dashoffset: 120;
+									}
+									100%{
+										stroke-dashoffset: 0;
+									}
+								}
+								@keyframes logo-ani2 {
+									0%{
+										stroke-dashoffset: 60;
+									}
+									100%{
+										stroke-dashoffset: 0;
+									}
+								}
+					      .logo_svg1 {
+					        fill: none;
+					        stroke: #7623F6;
+					        stroke-linecap: round;
+					        stroke-linejoin: round;
+					        stroke-width: 17px;
+									stroke-dasharray: 120;
+									stroke-dashoffset: 120;
+									animation: logo-ani1 2s forwards;
+									animation-delay: 3s;
+					      }
+								.logo_svg2 {
+					        fill: none;
+					        stroke: #7623F6;
+					        stroke-linecap: round;
+					        stroke-linejoin: round;
+					        stroke-width: 17px;
+									stroke-dasharray: 60;
+									stroke-dashoffset: 60;
+									animation: logo-ani2 2s  forwards;
+									animation-delay: 3s;
+					      }
+					    </style>
+					  </defs>
+					  <g id="레이어_2" data-name="레이어 2">
+					    <g id="레이어_1-2" data-name="레이어 1"><polyline class="logo_svg1" points="8.5 54.83 8.5 8.5 39.07 54.83"/><line class="logo_svg2" x1="35.71" y1="8.5" x2="66.29" y2="54.83"/></g>
+					  </g>
+					</svg>
+
+				</div>
+				<div class="nav1">
+					<a href="#scroll-section-1" class="nav-works">works</a>
+				</div>
+				<div class="nav2">
+					<a href="#" class="nav-contact">contact</a>
+				</div>
+			</div>
+		</nav>
+		<div class="scroll-section" id="scroll-section-0">
+			<div class="sticky-elem main-message">
+				Hello, I'm Moon
+			</div>
+			<div class="sticky-elem sub-message a">
+				Who gives a smile to people
+			</div>
+			<div class="sticky-elem sub-message b">
+				with Interaction Design.
+			</div>
+			<div class="sticky-elem circle-path a">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1018.07 1018.07">
+					<defs>
+						<style>
+							.cls-1 {
+								fill: none;
+								stroke: #7623F6;
+								stroke-miterlimit: 50;
+								stroke-width: 70px;
+							}
+						</style>
+					</defs>
+					<g id="레이어_2" data-name="레이어 2">
+						<g id="레이어_1-2" data-name="레이어 1">
+							<circle class="cls-1" cx="510" cy="510" r="474.03" />
+						</g>
+					</g>
+				</svg>
+			</div>
+			<div class="sticky-elem circle-path b ">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1018.07 1018.07">
+					<defs>
+						<style>
+							.cls-2 {
+								fill: none;
+								stroke: #F6235C;
+								stroke-miterlimit: 50;
+								stroke-width: 70px;
+								stroke
+							}
+						</style>
+					</defs>
+					<g id="레이어_2" data-name="레이어 2">
+						<g id="레이어_1-2" data-name="레이어 1">
+							<circle class="cls-2" cx="510" cy="510" r="474.03" />
+						</g>
+					</g>
+				</svg>
+			</div>
+		</div>
+		<div class="scroll-section" id="scroll-section-1">
+			<div class="works-title">Motion Graphic</div>
+			<div class="description_net">Netflix Web Redesign</div>
+			<div class="title-message">
+				<div class="sticky-elem title a">Motion Graphic Motion Graphic Motion Graphic</div>
+			</div>
+			<canvas id="video-canvas" width="1920" height="1080"></canvas>
+			<div class="title-message">
+				<div class="sticky-elem title b">Design Design Design Design Design Design</div>
+			</div>
+			<div class="background-bk"></div>
+		</div>
+		<div class="scroll-section" id="scroll-section-2">
+			<div class="title-message ">
+				<div class="sticky-elem title a">Interaction</div>
+				<div class="sticky-elem title b">Design</div>
+			</div>
+			<div class="img-Interaction">
+				<div class="imgA"></div>
+				<div class="imgB"></div>
+				<div class="imgC"></div>
+			</div>
+		</div>
+		<div class="scroll-section" id="scroll-section-3">
+			<div class="title-message">
+				<div class="sticky-elem title a">UI</div>
+				<div class="sticky-elem title b">Design</div>
+			</div>
+			<div class="img-Ui">
+				<div class="imgA"></div>
+				<div class="imgB"></div>
+				<div class="imgC"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/main.js">
+	</script>
 </body>
+
 </html>
